@@ -1,9 +1,0 @@
-.avatar {
-  max-width: 10rem;
-  border-radius: 50%;
-  padding: 10px;
-}
-
-.color.yellow::before {
-  background-color: yellow;
-}
