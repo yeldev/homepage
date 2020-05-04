@@ -21,9 +21,10 @@
     <meta property="og:title" content="Yelyzar Kaiukov &mdash; Résumé">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://yeldev.github.io/homepage/">
-    <base href="https://yeldev.github.io/homepage/">
+    <!-- <base href="https://yeldev.github.io/homepage/"> -->
     <title>Yelyzar Kaiukov &mdash; Résumé</title>
     <link rel="stylesheet" href="https://volodymyrkushnir.com/assets/stylesheets/base.css">
+    <link rel="stylesheet" href="./assets/stylesheets/base.css">
     <link rel="me" href="mailto:mycops18@gmail.com">
     <link rel="me" href="tel:+380733144364">
   </head>
@@ -34,18 +35,81 @@
           <div class="stackable grid">
             <div class="row">
               <div class="three wide center aligned column">
-                <!-- Avatar -->
+                <div class="avatar-wrapper">
+                  <object class="avatar" data="./assets/images/avatar.jpg" role="img" aria-label="My profile picture"></object>
+                </div>
               </div>
               <div class="thirteen wide column">
                 <div class="stackable grid">
                   <div class="sixteen wide column">
-                    <!-- Name, job, contacts -->
+                    <h1 class="name">Yelyzar Kaiukov</h1>
+                    <div class="job">Front-end developer in SEA Electronics Ukraine</div>
+                    <ul class="contacts">
+                      <li>
+                        <a href="https://www.facebook.com/profile.php?id=100013528092005" rel="author" class="facebook">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                              d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" />
+                          </svg>
+                          <span>Yelyzar Kaiukov</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="mailto:mycops18@gmail.com" rel="author" class="mail">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                            </path>
+                          </svg>
+                          <span>mycops18@gmail.com</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="tel:+380733144364" href="" class="phone">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                              d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z">
+                            </path>
+                          </svg>
+                          <span>+380-73-314-43-64</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://t.me/fakeTelegram" class="teleram">
+                          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                            </path>
+                          </svg>
+                          <span>Eli Zar</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="stackOverflow">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                            <path d="M15 21h-10v-2h10v2zm6-11.665l-1.621-9.335-1.993.346 1.62 9.335 1.994-.346zm-5.964 6.937l-9.746-.975-.186 2.016 9.755.879.177-1.92zm.538-2.587l-9.276-2.608-.526 1.954 9.306 2.5.496-1.846zm1.204-2.413l-8.297-4.864-1.029 1.743 8.298 4.865 1.028-1.744zm1.866-1.467l-5.339-7.829-1.672 1.14 5.339 7.829 1.672-1.14zm-2.644 4.195v8h-12v-8h-2v10h16v-10h-2z"/>
+                          </svg>
+                        </a>
+                        <span>Elli Zorro</span>
+                      </li>
+                    </ul>
                   </div>
                   <div class="sixteen wide mobile only column">
                     <div class="divider"></div>
                   </div>
                   <div class="sixteen wide column">
-                    <!-- Intro -->
+                    <h2>Resume</h2>
+                    <p>
+                      &mdash; Ahoj! I am a junior Front-End developer<strong style="margin-left: 0.0625em;">*</strong>
+                      with one year experiance in developing client side applications. 
+                      I really like it, especially when you know that this application will be useful to someone.
+                    </p>
+                    <p style="opacity: 0.75;">
+                      <strong style="margin-right: 0.0625em;">*</strong>
+                      Also, I intrested in building server application using <a href="https://nodejs.org" rel="external">
+                      Node.js
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -57,17 +121,293 @@
             </div>
             <div class="row">
               <div class="ten wide column">
-                <!-- Experience -->
+                <h3>Experience</h3>
+                <h6>Now</h6>
+                <ul class="timeline">
+                  <li class="highlighted">
+                    <p>
+                      <em>
+                        1<sup>st</sup>
+                        August 2019 - present
+                      </em>
+                    </p>
+                    <p>
+                      <strong>Front-End Developer</strong>
+                      at
+                      <strong>
+                        <a href="https://www.sea.com.ua/" rel="external" target="_blanck">
+                          SEA Electronics Ukraine
+                        </a>
+                      </strong>
+                    </p>
+                    <ol class="inverted">
+                      <li>
+                        <p>
+                          <strong>Front-End Developer<strong>
+                            at
+                          </strong>
+                            <a href="http://wim.in.ua/" rel="external" target="_blanck">
+                              Weight in Motion
+                            </a>
+                          </strong>
+                        </p>
+                        <ul>
+                          <li>
+                            develop client side application for the units of Ukravtodor
+                          </li>
+                          <li class="details">
+                            <input type="checkbox" id="project-1">
+                            <label for="project-1" class="summary">
+                              Is under development.
+                              It is developed for employees of <strong>Ukravtodor</strong> who are responsible for monitoring, collecting information, generating statistics on objects of weighing in motion. <br/>
+                              Developed using technologies such as:
+                                <ul>
+                                  <li>
+                                    <p>
+                                      Node.js
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                      React.js
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                      Material-UI
+                                    </p>
+                                  </li>
+                                  <li>
+                                    <p>
+                                     REST-API
+                                    </p>
+                                  </li>
+                                </ul>
+                            </label>
+                            <div class="labels">
+                              <a target="_blanck" href="https://nodejs.org/en/" class="label" rel="external">
+                                node.js
+                              </a>
+                              <a target="_blanck" href="https://www.npmjs.com/" class="label" rel="external">
+                                npm
+                              </a>
+                              <a target="_blanck" href="https://en.reactjs.org/" class="label" rel="external">
+                                react.js
+                              </a>
+                              <a target="_blanck" href="https://restfulapi.net/" class="label" rel="external">
+                                rest-api
+                              </a>
+                              <a target="_blanck" href="https://github.com/jaredpalmer/formik" class="label" rel="external">
+                                formik
+                              </a>
+                              <a target="_blanck" href="https://material-ui.com/" class="label" rel="external">
+                                material-ui
+                              </a>
+                              <a target="_blanck" href="https://www.npmjs.com/package/yup" class="label" rel="external">
+                                yup
+                              </a>
+                              <a target="_blanck" href="https://jwt.io/" class="label" rel="external">
+                                jsonwebtoken
+                              </a>
+                              <a target="_blanck" href="https://redux.js.org/" class="label" rel="external">
+                                redux
+                              </a>
+                              <a target="_blanck" href="https://redux-saga.js.org/" class="label" rel="external">
+                                redux-saga
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+                <h6>Back then</h6>
+                <ul class="timeline">
+                  <li>
+                    <p>
+                      <em>
+                        1<sup>st</sup>
+                        May 2018 - 1<sup>st</sup> May 2019
+                      </em>
+                    </p>
+                    <p>
+                      <strong> Service engineer in the equipment quality control department</strong>
+                      at
+                      <strong>
+                        <a href="https://www.sea.com.ua/" rel="external" target="_blanck">
+                          SEA Electronics Ukraine
+                        </a>
+                      </strong>
+                    </p>
+                    <ol class="inverted">
+                      <ul>
+                        <li>
+                          Setting up, checking, testing, flashing developed circuit boards for parking lots, elevator equipment, water meters, etc.
+                        </li>
+                      </ul>
+                    </ol>
+                  </li>
+                </ul>
+                <h6>Way back then</h6>
+                <ul class="timeline">
+                  <li>
+                    <p>
+                      <em>
+                        Some times, when I was a student (2015-2017)
+                      </em>
+                    </p>
+                    <p>
+                      <strong> Service engineer in the equipment quality control department</strong>
+                      at
+                      <strong>
+                        <a href="https://www.sea.com.ua/" rel="external" target="_blanck">
+                          SEA Electronics Ukraine
+                        </a>
+                      </strong>
+                    </p>
+                    <ol class="inverted">
+                      <li>
+                        <p>
+                          <strong>
+                            <em>Summer</em>
+                            2015
+                            <strong>
+                              Industrial Computer Assembler
+                            </strong>
+                          </strong>
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          <strong>
+                            <em>Summer 2016 & 2017</em>
+                            Service engineer parking equipment
+                          </strong>
+                        </p>
+                        <ul>
+                          <li>
+                            tuning and testing parking equipment
+                          </li>
+                          <li>
+                            board firmware
+                          </li>
+                          <li>
+                            preparation of equipment for launch at the facility <strong>(Malls, etc.)</strong>
+                          </li>
+                          <li>
+                            I also went on business trips to launch equipment in Dnipro, Lutsk and locally in Kyiv
+                          </li>
+                      </li>
+                    </ol>
+                  </li>
+                </ul>
+                <ul class="timeline">
+                  <li>
+                    <p>
+                      <em>
+                        19<sup>th</sup>
+                        Fabruary 2013
+                      </em>
+                    </p>
+                    <p>
+                      <strong>
+                        Got my internal passport
+                      </strong>
+                      (with a traditionally awkward photo, of course) — can't wait to replace it with a new Passport of the Citizen of Ukraine
+                    </p>
+                  </li>
+                </ul>
               </div>
               <div class="six wide column">
-                <!-- Languages -->
-                <!-- Skills -->
-                <!-- Character -->
-                <!-- Likes -->
-                <!-- Dislikes -->
-                <!-- Wants -->
-                <!-- Education -->
-                <!-- Articles -->
+                <section>
+                  <h3>Languages</h3>
+                  <p class="tags small"><a href="/uk-ua" hreflang="uk" rel="alternate" class="language" lang="uk">&#x1f1fa;&#x1f1e6; <span>УКРАЇНСЬКА</span></a> <a href="/ru-ru" hreflang="ru" rel="alternate" class="language" lang="ru">&#x1f1f7;&#x1f1fa; <span>РУССКИЙ</span></a> <span class="language" lang="en">&#x1f1fa;&#x1f1f8; ENGLISH</span></p>
+                </section>
+                <section>
+                  <h3>Skills</h3>
+                  <p class="tags small">HTML CSS JS BOOTSTRAP <span class="nowrap">Material-UI</span> SASS JQUERY REACT REDUX LODASH GULP WEBPACK NODEJS EXPRESS MVC SPA NPM <span class="nowrap">MICROSOFT OFFICE</span> LINUX WINDOWS MONGODB</p>
+                </section>
+                <section>
+                  <h3>Character</h3>
+                  <p class="tags small">PEDANTIC STRAIGHTFORWARD PURPOSEGUL SOCIAL SPORTS CURIOUS RESOURCEFUL CHEERFUL ATTENTIVE LITERATE</p>
+                </section>
+                <section>
+                  <h3>Likes&#x1f603;</h3>
+                  <p class="tags small">HUMOUR PATIENCE DOGS MOVIES ANDROID FOOTBALL 
+                    <span class="nowrap">FC CHELSEA</span> 
+                    JIM BEAM LVIV DNIPRO LUTSK ROCK NETFLIX STAR-WARS
+                    <button id="meh"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                      <path d="M576 256c0 100.586-53.229 189.576-134.123 239.04-7.532 4.606-17.385 2.241-21.997-5.304-4.609-7.539-2.235-17.388 5.304-21.997C496.549 424.101 544 345.467 544 256c0-89.468-47.452-168.101-118.816-211.739-7.539-4.609-9.913-14.458-5.304-21.997 4.608-7.539 14.456-9.914 21.997-5.304C522.77 66.424 576 155.413 576 256zm-96 0c0-66.099-34.976-124.572-88.133-157.079-7.538-4.611-17.388-2.235-21.997 5.302-4.61 7.539-2.236 17.388 5.302 21.998C418.902 152.963 448 201.134 448 256c0 54.872-29.103 103.04-72.828 129.779-7.538 4.61-9.912 14.459-5.302 21.998 4.611 7.541 14.462 9.911 21.997 5.302C445.024 380.572 480 322.099 480 256zm-138.14-75.117c-7.538-4.615-17.388-2.239-21.998 5.297-4.612 7.537-2.241 17.387 5.297 21.998C341.966 218.462 352 236.34 352 256s-10.034 37.538-26.841 47.822c-7.538 4.611-9.909 14.461-5.297 21.998 4.611 7.538 14.463 9.909 21.998 5.297C368.247 314.972 384 286.891 384 256s-15.753-58.972-42.14-75.117zM256 88.017v335.964c0 21.436-25.942 31.999-40.971 16.971L126.059 352H24c-13.255 0-24-10.745-24-24V184c0-13.255 10.745-24 24-24h102.059l88.971-88.954C230.037 56.038 256 66.551 256 88.017zm-32 19.311l-77.659 77.644A24.001 24.001 0 0 1 129.372 192H32v128h97.372a24.001 24.001 0 0 1 16.969 7.028L224 404.67V107.328z"/>
+                    </svg> MEH
+                    <audio preload="none">
+                      <source src="./assets/sounds/meh.mp3" type="audio/mpeg">
+                      </audio>
+                    </button> 
+                    <span class="nowrap">ATTENTION TO DETAILS</span> GRAMMAR SPELLCHECK SEMANTICS MINI-SERIES <span class="nowrap">RYAN GOSLING</span> <span class="nowrap">EMMA STONE</span> ​<span class="nowrap">CURAPROX 5460</span></p>
+                </section>
+                <section>
+                  <h3>Dislikes&#x1f61e;</h3>
+                  <p class="tags small">
+                    POLITICS RACISM ASS-KISSERS VODKA INCOMPETENCE ARROGANCE ENVY GOLF 
+                    <button id="chartreuse" class="color yellow">YELLOW</button>
+                     METRO REALITY-SHOWS JŪRMALA LIE INCOMPETENCE
+                  </p>
+                </section>
+                <section>
+                  <h3>Wants&#x1f97a;</h3>
+                  <p class="tags small bulleted"><span class="tag">TO BE FIT AND HEALTHY</span><span class="tag">TO OWN MY SCHEDULE</span><span class="tag">TO READ MORE</span><span class="tag">TO OPEN A CAFÉ</span><span class="tag">TO BE BRAVE</span><span class="tag">TO BECOME A SUPERHERO</span><span class="tag">TO LISTEN AND LEARN</span></p>
+                </section>
+                <section>
+                  <h3>Education</h3>
+                  <ul class="timeline">
+                    <li>
+                      <div><em>Every day</em></div>
+                      <p class="tags bulleted">
+                        <span class="tag">
+                          <a href="https://frontendfront.com/" rel="external">
+                            <strong>Udemy</strong>
+                          </a>
+                        </span>
+                        <span class="tag">
+                          <a href="https://frontendfront.com/" rel="external">
+                            <strong>freecodecamp</strong>
+                          </a>
+                        </span>
+                        <span class="tag">
+                          <a href="https://frontendfront.com/" rel="external">
+                            <strong>Youtube</strong>
+                          </a>
+                        </span>
+                        <span class="tag">
+                          <a href="https://frontendfront.com/" rel="external">
+                            <strong>Coursehunters</strong>
+                          </a>
+                        </span>
+                      </p>
+                    </li>
+                    <li>
+                      <div><em>December 2005 &ndash; April 2006</em></div>
+                      <div><strong>Certificates of CCNA Course Completion</strong> at <a href="https://www.netacad.com/" rel="external"><strong>Cisco Networking Academy Program</strong></a></div>
+                    </li>
+                    <li>
+                      <div><em>1<sup>st</sup> September 2003 &ndash; 30<sup>th</sup> June 2008</em></div>
+                      <div><strong>Bachelor's degree</strong> in <strong>computer science</strong> at <a href="http://tntu.edu.ua//?p=en/home" rel="external"><strong>Ternopil National Technical University</strong></a></div>
+                    </li>
+                    <li>
+                      <div><em>1<sup>st</sup> October 1995 &ndash; 23<sup>rd</sup> May 1999</em></div>
+                      <div><strong>Certificate of graduation</strong> at <strong>Ternopil Art School for Children</strong></div>
+                    </li>
+                    <li>
+                      <div><em>1<sup>st</sup> September 1993 &ndash; 21<sup>st</sup> June 2003</em></div>
+                      <div><strong>Certificate of graduation</strong> at <strong>№20 Middle School of General Education</strong></div>
+                    </li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Articles</h3>
+                  <p>None published <sup><em>yet</em></sup></p>
+                </section>
               </div>
             </div>
           </div>
