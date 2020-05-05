@@ -1,0 +1,37 @@
+@import "_base.scss";
+@import "_variables.scss";
+@import "_slider.scss";
+@import "_header.scss";
+@import "_modal.scss";
+
+.avatar {
+  max-width: 10rem;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.color.yellow::before {
+  background-color: $dislikeColor1;
+}
+
+.color.yellowgreen::before {
+  background-color: $dislikeColor2;
+}
+
+.color.red::before {
+  background-color: $dislikeColor3;
+}
+
+.color.lightBlue::before {
+  background-color: $likeColor1;
+}
+
+.color.blue::before {
+  background-color: $likeColor2;
+}
+
+.color.black::before {
+  background-color: $likeColor3;
+}
+
+@import "media.scss";
