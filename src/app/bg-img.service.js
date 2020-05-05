@@ -1,6 +1,7 @@
 import { fetchPlanet } from "./helpers/fetchBg";
 
 class BackgroundImageService {
+  
   constructor() {
     this.starships = document.querySelector("#starships");
     this.planets = document.querySelector("#planets");
