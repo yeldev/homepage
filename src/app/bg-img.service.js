@@ -1,24 +1,46 @@
-import { fetchBg } from "./helpers/fetchBg";
+import { fetchPlanet } from "./helpers/fetchBg";
 
 class BackgroundImageService {
   constructor() {
-    this.mainContainer =  document.querySelector("#star-wars");
+    this.starships = document.querySelector("#starships");
+    this.planets = document.querySelector("#planets");
+    this.bg = document.querySelector(".bg");
   }
 
-  drawPicture() {
-    console.log("hello ", Math.random())
+  async drawPlanet() {
+    let randomId = Math.floor(Math.random() * 14) + 1;
+    let id;
+    try {
+      const res = await fetchPlanet(randomId, "planets");
+      id = res.url.match(/\d/g).join("");
+      this.bg.style.backgroundImage  = `url(https://starwars-visualguide.com/assets/img/planets/${id}.jpg)`;
+    } catch (error) {
+      alert(`New planet not found. Try again.`);
+    }
   }
 
-  getInputs() {
-    
+  async drawVehicles() {
+    let randomId = Math.floor(Math.random() * 10) + 1;
+    let id;
+    try {
+      const res = await fetchPlanet(randomId, "vehicles");
+      id = res.url.match(/\d/g).join("");
+      this.bg.style.backgroundImage  = `url(https://starwars-visualguide.com/assets/img/vehicles/${id}.jpg)`;
+    } catch (error) {
+      alert(`New vehicle not found. Try again.`);
+    }
   }
 
-  onClick(cb) {
-    // this.mainContainer.addEventListener("click", cb);
+  onClickPlanet(cb) {
+    this.planets.addEventListener("click", cb);
   }
 
-  init() {
-    console.log("fetch-first");
+  onClickStarships(cb) {
+    this.starships.addEventListener("click", cb);
+  }
+
+  async init() {
+    this.drawPlanet();
   }
 
 }

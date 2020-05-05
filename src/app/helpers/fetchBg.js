@@ -1,9 +1,9 @@
-export const fetchBg = async (rundomParam) => {
+export const fetchPlanet = async (rundomParam, type) => {
   try {
-    const response = await fetch(`https://swapi.dev/api/planets/${rundomParam}`);
+    const response = await fetch(`https://swapi.dev/api/${type}/${rundomParam + 1}/`);
     const data = await response.json();
-    console.log(data);
+    return data;
   } catch (error) {
-    
+    throw error;
   }
 };
