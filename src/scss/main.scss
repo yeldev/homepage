@@ -30,3 +30,114 @@
 .color.black::before {
   background-color: $likeColor3;
 }
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  &__buttons {
+    display: none;
+  }
+  &__credits {
+    display: flex;
+    align-items: center;
+    img {
+      padding: 10px;
+    }
+  }
+}
+
+.slider {
+	display: block;
+	position: relative;
+  height: auto;
+  width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.images-container {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	transition: .5s;
+}
+.images-container img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.buttons-block > div {
+	color: #fff;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	font-size: 25px;
+	z-index: 99;
+}
+#prev-btn {
+	left: 5px;
+}
+#next-btn {
+	right: 5px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  z-index: 200;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.open {
+  display: block;
+}
+
+@media (min-width: $bp-tablet) {
+  .bg {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .header {
+    &__buttons {
+      display: flex;
+      width: 150px;
+      justify-content: space-evenly;
+      button {
+        border: none;
+        font-size: 16px;
+        background-color: $likeColor2;
+        color: #fff;
+        font-weight: 600;
+        padding: 5px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: $likeColor1;
+      }
+    }
+  }
+  .modal {
+    width: 40%;
+    left: 30%;
+  }
+}

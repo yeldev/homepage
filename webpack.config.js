@@ -1,4 +1,6 @@
 const CopyPlugin = require("copy-webpack-plugin");
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const imageminMozjpeg = require('imagemin-mozjpeg');
 
 module.exports = {
   entry: {
@@ -13,6 +15,14 @@ module.exports = {
         { from: './public/favicon-96x96.png', to: '' },
         { from: './public/favicon.ico', to: '' },
       ]),
+      new ImageminPlugin({
+        plugins: [
+          imageminMozjpeg({
+            quality: 50,
+            progressive: true
+          })
+        ]
+      }),
   ],
   module: {
     rules: [

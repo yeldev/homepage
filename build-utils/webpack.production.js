@@ -16,7 +16,9 @@ module.exports = merge(commonConfig, {
   optimization: {
     minimizer: [
       new OptimizeCssAssetsPlugin(),
-      new TerserPlugin(),
+      new TerserPlugin({
+        cache: true
+      }),
       new HtmlWebpackPlugin({
         template:  path.resolve(__dirname, "../public/index.html"),
         minify: {
