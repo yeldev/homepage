@@ -9,9 +9,9 @@
       "sizes": "96x96"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "background_color": "white",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/homework",
   "theme_color": "white"
 }
