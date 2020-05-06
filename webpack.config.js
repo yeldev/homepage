@@ -14,6 +14,8 @@ module.exports = {
         { from: './public/apple-icon.png', to: '' },
         { from: './public/favicon-96x96.png', to: '' },
         { from: './public/favicon.ico', to: '' },
+        { from: './public/manifest.json', to: '' },
+        { from: './public/favicon-192x192.png', to: '' },
       ]),
       new ImageminPlugin({
         plugins: [

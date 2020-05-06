@@ -1,0 +1,22 @@
+{
+  "short_name": "yeldev",
+  "name": "Yelyzar Kaiukov",
+  "description": "First homework in Binary Studio",
+  "icons": [
+    {
+      "src": "favicon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "favicon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/homepage",
+  "background_color": "white",
+  "display": "standalone",
+  "scope": "/homepage",
+  "theme_color": "white"
+}
