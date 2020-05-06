@@ -9,9 +9,9 @@
       "sizes": "96x96"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "https://yeldev.github.io/homepage/",
   "background_color": "white",
   "display": "standalone",
-  "scope": "/homework",
+  "scope": "/",
   "theme_color": "white"
 }
