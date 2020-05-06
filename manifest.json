@@ -12,6 +12,6 @@
   "start_url": "https://yeldev.github.io/homepage/",
   "background_color": "white",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/homepage",
   "theme_color": "white"
 }
