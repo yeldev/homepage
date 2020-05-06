@@ -14,7 +14,7 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "https://yeldev.github.io/homepage/",
+  "start_url": "/homepage",
   "background_color": "white",
   "display": "standalone",
   "scope": "/homepage",
